@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPIT-405 lab 2</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px 12px;
+            text-align: center;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lab 2: HTML</h1>
+
+    <a href="https://cpit405.gitlab.io"> CPIT-405 GitLab </a>
+
+    <p> HTML is the standard language used to create web pages </p>
+    <hr>
+    <p> Learning HTML is an important </p>
+
+    <a href="https://www.kau.edu.sa">
+        <img src="static.png" alt="King Abdulaziz University Logo" width="200">
+    </a>
+
+    <p>
+        <strong> strong </strong>
+        <em> em </em>
+        <sup> sup </sup>
+        <sub> sub </sub>
+        <span> span </span>
+    </p>
+
+    <h1>Heading elements</h1>
+
+    <h2>Summary</h2>
+    <p>Some text here...</p>
+
+    <h2>Examples</h2>
+
+    <h3>Example 1</h3>
+    <p>Some text here...</p>
+
+    <h3>Example 2</h3>
+    <p>Some text here...</p>
+
+    <h2>See also</h2>
+    <p>Some text here...</p>
+
+    <h2>Lists</h2>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>React</li>
+        <li>Angular</li>
+        <li>Vue</li>
+    </ul>
+
+    <h3>Definition List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>A markup language used to structure web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>A language used to style and design web pages.</dd>
+    </dl>
+
+    <h2>Frameworks and Languages</h2>
+
+    <table border="1">
+        <tr>
+            <th>Basics</th>
+            <th>Front-end Frameworks</th>
+            <th>Server-side frameworks</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>React</td>
+            <td>Spring</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Angular</td>
+            <td>Django</td>
+        </tr>
+        <tr>
+            <td>JS</td>
+            <td>Vue</td>
+            <td>Laravel</td>
+        </tr>
+    </table>
+
+    <h2>Login Form</h2>
+
+    <form>
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login">
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!-- Register Form -->
+    <h2>Register Form:</h2>
+    <form action="#">
+        <div class="form-group">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group">
+            <label for="tel">Tel:</label><br>
+            <input type="tel" id="tel" name="tel" placeholder="Enter your tel number">
+        </div>
+
+        <div class="form-group">
+            <label>Payment Method:</label>
+            <input type="radio" id="visa" name="payment" value="visa">
+            <label for="visa">Visa</label>
+            <input type="radio" id="card" name="payment" value="card">
+            <label for="card">Card</label>
+        </div>
+
+        <div class="form-group">
+            <label>Contact:</label>
+            <input type="checkbox" id="email_c" name="contact" value="email">
+            <label for="email_c">email</label>
+            <input type="checkbox" id="tel_c" name="contact" value="tel">
+            <label for="tel_c">tel</label>
+            <input type="checkbox" id="sms_c" name="contact" value="sms">
+            <label for="sms_c">SMS</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+
+    <br>
+
+    <!-- Table 1: Event Schedule -->
+    <table>
+        <caption>Event Schedule</caption>
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Location</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web Dev Intro</td>
+                <td>Room A</td>
+                <td>9:00 AM</td>
+            </tr>
+            <tr>
+                <td>CSS Styling</td>
+                <td>Room B</td>
+                <td>11:00 AM</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table 2: Weekend Activities -->
+    <table>
+        <caption>Weekend Activities</caption>
+        <thead>
+            <tr>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hiking</td>
+                <td>Swimming</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table 3: Monday Schedule with Rowspan -->
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="3">Monday</td>
+                <td>9:00 AM</td>
+                <td>HTML Basics</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>CSS Intro</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>JavaScript Basics</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table 4: Event Schedule with Rowspan -->
+    <table>
+        <caption>Event Schedule</caption>
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Web Dev Intro</td>
+                <td>Room A</td>
+            </tr>
+            <tr>
+                <td>Room B</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
